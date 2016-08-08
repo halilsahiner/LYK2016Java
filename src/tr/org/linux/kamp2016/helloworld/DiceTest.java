@@ -1,37 +1,31 @@
 package tr.org.linux.kamp2016.helloworld;
 
-import java.util.Random;
+
 
 public class DiceTest {
+	public static void main (String args[]) {
+		// create two Die objects
+		Dice dice1 = new Dice();
+		Dice dice2 = new Dice();
 
-	public static void main(String args[]) {
+		// play the game
+		dice1.roll();
+		System.out.println("Player 1 has " + dice1.getFaceValue());
+		dice2.roll();
+		System.out.println("Player 2 has " + dice2.getFaceValue());
 
-		for (int i = 0; i < 3; i++) {
+		// display the result
 
-			Dice r = new Dice();
-			r.setFaceValue1(randInt1(0, 7));
-			r.setFaceValue2(randInt1(0, 7));
-
-			if (r.getFaceValue1() < r.getFaceValue2()) {
-				System.out.println(" First player: " + r.getFaceValue1() + " Second Player: " + r.getFaceValue2()
-						+ " Result: " + r.roll() + " *Second Player Won*");
-
-			} else if (r.getFaceValue1() > r.getFaceValue2()) {
-				System.out.println(" First player: " + r.getFaceValue1() + " Second Player: " + r.getFaceValue2()
-						+ " Result: " + r.roll() + " *First Player Won*");
-
-			} else {
-				System.out.println(" First player: " + r.getFaceValue1() + " Second Player: " + r.getFaceValue2()
-						+ " Result: " + r.roll() + " Try Again...");
-			}
+		if (dice1.getFaceValue() > dice2.getFaceValue()) {
+			System.out.println("First player wins with " + dice1.getFaceValue());
+		} else if (dice1.getFaceValue() < dice2.getFaceValue()) {
+			System.out.println("Second player wins with " + dice2.getFaceValue());
+		} else {
+			System.out.println("Tie! Both players have " + dice1.getFaceValue());
 		}
 
-	}
 
-	public static int randInt1(int min, int max) {
-		Random rgen = new Random();
-		int range = Math.abs(max - min) + 1;
-		int random = min + rgen.nextInt(range);
-		return random;
 	}
+	
+	
 }

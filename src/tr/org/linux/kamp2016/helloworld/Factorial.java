@@ -1,17 +1,14 @@
 package tr.org.linux.kamp2016.helloworld;
 
-import java.util.Scanner;
+
 
 public class Factorial {
 	
-	public static void main(String arg[]){
-		
-		Scanner input= new Scanner(System.in);
-		int x = input.nextInt();
-		
-	 for ( ){
-		 
-	 }
+	public static int factorial(int x){
+		int fact =1;
+		for(int i =2; i<=x; i++)
+			fact *=i;
+		return fact;
 	}
 
 }
