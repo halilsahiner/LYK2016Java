@@ -14,9 +14,9 @@ public class SummingArray {
 				 System.out.println("Int gir");
 				 Scanner inputNumber= new Scanner(System.in);
 				 int number1=inputNumber.nextInt();
-				 sumArray[i]=number1;
+//				 sumArray[i]=number1;
 				 sum+=sumArray[i];
-				 
+				 break;
 				 
 			 }
 			 

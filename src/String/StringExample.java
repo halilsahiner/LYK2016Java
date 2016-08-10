@@ -19,7 +19,7 @@ public class StringExample {
 		String s4 = new String ("b");
 		String s5 = new String ("A");
 		
-		System.out.println(s2.compareTo(s3));
+		System.out.println(s2.compareTo(s3));// METİNDEKİ STRİNGLERİN KARAKTER SAYILARINI KARŞILAŞTIRIYOR
 		
 		System.out.println(s3.compareTo(s2));
 		

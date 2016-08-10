@@ -11,11 +11,11 @@ public class ArrayListExmple {
 				Scanner input = new Scanner (System.in);
 				System.out.println("Bir değer giriniz");
 				int inputNumber = input.nextInt();
-				ArrayList <Integer>arraylist5 =new ArrayList<>();
+				ArrayList <Integer>arraylist5 =new ArrayList<Integer>();
 				
 				int counter =0;
 				while (inputNumber !=-1){
-					System.out.println("Bir giriniz");
+					System.out.println("Bir değer giriniz");
 					
 					if(inputNumber != -1){
 					arraylist5.add(inputNumber = input.nextInt());
